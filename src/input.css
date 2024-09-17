@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body-styles {
+    @apply bg-gray-900 font-sans;
+}
+
+.home-section {
+    @apply text-center h-full bg-gray-500 text-white;
+}
+
+@media (min-width: 768px) {
+    .home-section {
+        @apply flex justify-center items-center h-full text-center pt-20;
+    }
+}
+
+/* Custom CSS for Contact Section */
+form input,
+form textarea,
+form button {
+  @apply transition-all ease-in-out;
+}
+
+form input:focus,
+form textarea:focus {
+  @apply ring-2 ring-blue-500 outline-none;
+}
+
+/* Custom CSS for Footer */
+footer a {
+  @apply transition-all ease-in-out;
+}
